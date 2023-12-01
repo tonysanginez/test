@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'databasets'
+      MYSQL_ROOT_PASSWORD: 'root'
+    volumes:
+      - ./BaseDatos.sql:/docker-entrypoint-initdb.d/BaseDatos.sql
+    ports:
+      - "3307:3306"
+  api1:
+    image: clienteapi
+    ports:
+      - "8089:8089"
+    depends_on:
+      - db
+  api2:
+    image: cuentaapi
+    ports:
+      - "8090:8090"
+    depends_on:
+      - db
