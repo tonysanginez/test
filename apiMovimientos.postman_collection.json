@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "7d5198a5-40cd-468a-b0d2-a2b6ad0d5b55",
+		"name": "apiMovimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createMovimientos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "reporteEstadoCuenta",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "saldoInsuficienteMovimiento",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
